@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Here</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="my-header">
+		<nav class="header-nav" id="navbar-default">
+			<a name="top"></a>
+			<div class="name" id="shop-title">ShopHere</div>
+			<div class="menu">
+				<span class="main" id="main">Main Menu</span>
+				<span class="main" id="flash">Flash Sale</span>
+				<span class="main" id="today">Today Special</span>
+				<span class="quan" id="quan">0</span>
+				<button class="mycart" id="mycart">Cart</button>
+			</div>
+			<div class="container">
+			  	<button type="button" id="icon-btn" class="btn btn-info" data-toggle="collapse" data-target="#demo">Menu</button>
+			  	<div id="demo" class="collapse in">
+			  		<div class="bar">
+			  			<button class="icon-main" id="icon-main">Main Menu</button>
+			  			<button class="icon-flash" id="icon-flash">Flash Sales</button>
+			  			<button class="icon-today" id="icon-today">Today Special</button>
+			  			<button class="icon-cart" id="icon-mycart">Cart</button>
+			  		</div>
+			  	</div>
+			</div>
+		</nav>
+	</header>
+	<div class="main-page" id="main-page">
+		<div class="flash">
+			<a href="flashPage.html"><h2 class="flash-head">Flash Sale</h2></a>
+			<div class="flash-box">Mask <br> $110 <br> Offer 70%<br> <button id="btn" onclick="check('f1')">Add</button></div>
+			<div class="flash-box">Bluetooth Speaker <br> $200 <br> Offer 80%<br> <button id="btn" onclick="check('f2')">Add</button></div>
+			<div class="flash-box" id="flash-box">Phone Casing <br> $10 <br> Offer 40%<br> <button id="btn" onclick="check('f3')">Add</button></div>
+		</div>
+		<div class="today">
+			<a href="todayPage.html"><h2 class="today-head">Today Special</h2></a>
+			<div class="today-box">Subway <br> $5 <br> Offer 90% <br> <button id="btn" onclick="check('t1')">Add</button></div>
+			<div class="today-box">Thermometer <br> $100 <br> Offer 30%  <br> <button id="btn" onclick="check('t2')">Add</button></div>
+			<div class="today-box" id="flash-box">Bluetooth Earphone <br> $200 <br> Offer 40%  <br> <button id="btn" onclick="check('t3')">Add</button></div>
+		</div>
+		<div class="categories">
+			<h2 class="cate-head">Categories</h2>
+			<div class="cate-box">Mobile</div>
+			<div class="cate-box">Women's dress</div>
+			<div class="cate-box">Face Mask</div>
+			<div class="cate-box">Monitor</div>
+			<div class="cate-box">Men's T-shirt</div>
+			<div class="cate-box">Smart Watches</div>
+			<div class="cate-box">Health Accessories</div>
+			<div class="cate-box">Food Storage</div>
+		</div>
+	</div>
+	<div class="flash-page" id="flash-page" style="display: none;">
+		<h2>Flash Sales</h2>
+		<div class="flash-page-box">Mask <br> $110 <br> Offer 70%<br><button id="btn" onclick="check('f1')">Add</button></div>
+		<div class="flash-page-box">Spectacles <br> $50 <br> Offer 70%<br><button id="btn" onclick="check('f4')">Add</button></div>
+		<div class="flash-page-box">Earbuds <br> $500 <br> Offer 30%<br><button id="btn" onclick="check('f5')">Add</button></div>
+		<div class="flash-page-box">Cleanser <br> $30 <br> Offer 90%<br><button id="btn" onclick="check('f6')">Add</button></div>
+		<div class="flash-page-box">Mouse <br> $19.90 <br> Offer 50%<br><button id="btn" onclick="check('f7')">Add</button></div>
+		<div class="flash-page-box">Mask <br> $110 <br> Offer 70%<br><button id="btn" onclick="check('f1')">Add</button></div>
+		<div class="flash-page-box">Spectacles <br> $50 <br> Offer 70%<br><button id="btn" id="btn" id="btn" onclick="check('f4')">Add</button></div>
+		<div class="flash-page-box">Earbuds <br> $500 <br> Offer 30%<br><button id="btn" id="btn" onclick="check('f5')">Add</button></div>
+		<div class="flash-page-box">Cleanser <br> $30 <br> Offer 90%<br><button id="btn" onclick="check('f6')">Add</button></div>
+		<div class="flash-page-box">Mouse <br> $19.90 <br> Offer 50%<br><button id="btn" onclick="check('f7')">Add</button></div>
+		<div class="flash-page-box">Mask <br> $110 <br> Offer 70%<br><button id="btn" onclick="check('f1')">Add</button></div>
+		<div class="flash-page-box">Spectacles <br> $50 <br> Offer 70%<br><button id="btn" onclick="check('f4')">Add</button></div>
+		<div class="flash-page-box">Earbuds <br> $500 <br> Offer 30%<br><button id="btn" onclick="check('f5')">Add</button></div>
+		<div class="flash-page-box">Cleanser <br> $30 <br> Offer 90%<br><button id="btn" onclick="check('f6')">Add</button></div>
+		<div class="flash-page-box">Mouse <br> $19.90 <br> Offer 50%<br><button id="btn" onclick="check('f7')">Add</button></div>
+		<div class="flash-page-box">Mask <br> $110 <br> Offer 70%<br><button id="btn" onclick="check('f1')">Add</button></div>
+	</div>
+	<div class="today-page" id="today-page" style="display: none;">
+		<h2>Today Specials</h2>
+		<div class="today-page-box">Subway <br> $5 <br> Offer 90%<br><button id="btn" onclick="check('t1')">Add</button></div>
+		<div class="today-page-box">Thermometer <br> $100 <br> Offer 30%<br><button id="btn" onclick="check('f2')">Add</button></div>
+		<div class="today-page-box">Bluetooth Earphone <br> $200 <br> Offer 40%<br><button id="btn" onclick="check('f3')">Add</button></div>
+		<div class="today-page-box">Window 10 <br> $12 <br> Offer 90%<br><button id="btn" onclick="check('f4')">Add</button></div>
+		<div class="today-page-box">Lipstick <br> $19.90 <br> Offer 50%<br><button id="btn" onclick="check('f5')">Add</button></div>
+		<div class="today-page-box">Subway <br> $5 <br> Offer 90%<br><button id="btn" onclick="check('t1')">Add</button></div>
+		<div class="today-page-box">Thermometer <br> $100 <br> Offer 30%<br><button id="btn" onclick="check('f2')">Add</button></div>
+		<div class="today-page-box">Bluetooth Earphone <br> $200 <br> Offer 40%<br><button id="btn" onclick="check('f3')">Add</button></div>
+		<div class="today-page-box">Window 10 <br> $12 <br> Offer 90%<br><button id="btn" onclick="check('f4')">Add</button></div>
+		<div class="today-page-box">Lipstick <br> $19.90 <br> Offer 50%<br><button id="btn" onclick="check('f5')">Add</button></div>
+		<div class="today-page-box">Subway <br> $5 <br> Offer 90%<br><button id="btn" onclick="check('t1')">Add</button></div>
+		<div class="today-page-box">Thermometer <br> $100 <br> Offer 30%<br><button id="btn" onclick="check('f2')">Add</button></div>
+		<div class="today-page-box">Bluetooth Earphone <br> $200 <br> Offer 40%<br><button id="btn" onclick="check('f3')">Add</button></div>
+		<div class="today-page-box">Window 10 <br> $12 <br> Offer 90%<br><button id="btn" onclick="check('f4')">Add</button></div>
+		<div class="today-page-box">Lipstick <br> $19.90 <br> Offer 50%<br><button id="btn" onclick="check('f5')">Add</button></div>
+		<div class="today-page-box">Subway <br> $5 <br> Offer 90%<br><button id="btn" onclick="check('t1')">Add</button></div>
+	</div>
+	<div class="cart" id="cart" style="display: none;">
+		<h2>My Cart</h2>
+		<div id="my-item">
+			<table class="table" id="table" >
+
+			</table>
+		</div>
+		<button class="continue" id="continue">Continue Shopping</button>
+		<button class="proceed" id="proceed">Proceed to Checkout</button>
+	</div>
+	<div class="payment" id="payment" style="display: none;">
+		<h2>Checkout</h2>
+		<div class="item-box">
+			<label class="myitem">Item: </label>
+			<p id="item">0</p>
+		</div>
+		<div class="ammount-box" id="myammount">
+			<label class="myammount">Total Ammount: </label>
+	        <p id="ammount">$0</p>
+		</div><div class="ammount-box" id="balance" style="display: none;">
+			<label class="myammount">Balance: </label>
+	        <p id="mybalance">$0</p>
+		</div>
+		<div class="insert-box" onsubmit="return error_message()">
+			<label class="myinsert">Insert Ammount: </label>
+	        <input type="text" name="insert" id="insert">
+	        <button type="submit" class="insert-btn" id="insert-btn">OK</button>
+		</div>
+		<div id="great" class="great" style="display: none;">Thank You for Coming, <br>Have a great day.</div>
+	</div>
+	<footer id="footer">
+		<a href="#top">Back to the top</a>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
